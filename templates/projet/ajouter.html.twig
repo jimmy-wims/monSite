@@ -1,0 +1,41 @@
+{% extends 'layoutGeneral.html.twig' %}
+{% block titre %}
+	<h2>Ajouter un projet</h2>
+
+ 	<div class="row">
+    	<form class="col s6">
+     		<div class="row">
+        		<div class="input-field col s6 police">
+					{{ form_row(monFormulaire.nom, {'attr': {'class': 'police'}}) }}
+				</div>
+				<div class="input-field col s6">
+					{{ form_row(monFormulaire.langage, {'attr': {'class': 'police'}}) }}				</div>
+			</div>
+			<div class="row">
+        		<div class="input-field col s12">
+					{{ form_row(monFormulaire.description, {'attr': {'class': 'zoneSaisie'}}) }}
+				</div>
+			</div>
+			<div class="row">
+        		<div class="input-field col s6">
+					{{ form_row(monFormulaire.lien, {'attr': {'class': 'police'}}) }}
+				</div>
+			</div>
+			<div class="row">
+        		<div class="input-field">
+					{{ form_row(monFormulaire.image) }}
+				</div>
+			</div>
+			<div class="row">
+        		<div class="input-field">
+					{{ form_row(monFormulaire.submit, {'attr': {'class': 'waves-effect waves-light  deep-purple darken-1 btn'}}) }}
+				</div>
+			</div>
+		</form>
+	</div>
+	<script>
+		$(document).ready(function() {
+    	$('select').material_select();
+		});
+	</script>
+{% endblock %}

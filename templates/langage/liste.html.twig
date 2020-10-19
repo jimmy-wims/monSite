@@ -1,0 +1,9 @@
+{% extends 'layoutGeneral.html.twig' %}
+{% block titre %}
+	<h2>Liste des langages</h2>
+ 	{% for langage in langages %}
+		<li>
+			{{langage.nom}}
+		</li>
+	{% endfor %}
+{% endblock %}

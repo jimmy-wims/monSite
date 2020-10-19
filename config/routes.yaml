@@ -1,0 +1,31 @@
+index:
+  path: /
+  controller: App\Controller\PageController::index
+
+navigation:
+  path: /navigation
+  controller: App\Controller\PageController::navigation
+
+competence:
+  path: /competence
+  controller: App\Controller\PageController::competence
+
+parcours:
+  path: /parcours
+  controller: App\Controller\PageController::parcours
+
+projet:
+  path: /projet/{id}
+  controller: App\Controller\PageController::projet
+
+projet_ajouter:
+  path: /ajouter/projet
+  controller: App\Controller\PageController::ajouterProjet
+
+ajouterLangage:
+  path: /ajouter/langage 
+  controller: App\Controller\PageController::ajouterLangage
+
+listeLangage:
+  path: /liste/langage
+  controller: App\Controller\PageController::listeLangage

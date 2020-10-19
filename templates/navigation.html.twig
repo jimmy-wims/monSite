@@ -1,0 +1,29 @@
+<ul id = "dropdown" class = "dropdown-content">
+	<li>
+		<a target="blank" href="https://www.linkedin.com/in/jimmy-wims-748b68182"><img class="responsive-img" src="/images/linkedin.jpg" width=17 height=17/> &nbspLinkedin</a>
+	</li>
+</ul>
+
+<ul id = "dropdown2" class = "dropdown-content">
+	<li>
+		<a target="blank" href="file/CV_JimmyWIMS.pdf">CV</a>
+	</li>
+	<li>
+		<a target="blank" href="mailto:jimmy.wims@laposte.net">Contact</a>
+	</li>
+</ul>
+
+<div class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper grey darken-2"> 
+		  <a class="police" style="font-size:x-large" href="{{ path('index')}}" class="brand-logo">&nbsp Jimmy WIMS</a>
+		  <ul id="nav-mobile" class="right hide-on-med-and-down">
+		    <li><a class="police" href="{{ path('parcours') }}">Parcours</a></li>
+		    <li><a class="police" href="/projet/0">Projet</a></li>
+		    <li><a class="police" href="{{ path('competence') }}">Compétences</a></li>
+	        <li><a class="dropdown-button" href="#!" data-activates="dropdown">Réseaux sociaux<i class="material-icons right"></i></a></li>
+	        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">CV/Contact<i class="material-icons right"></i></a></li>
+		  </ul>
+		</div>
+	</nav>
+</div>

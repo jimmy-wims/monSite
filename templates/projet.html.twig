@@ -1,0 +1,45 @@
+{% extends "layoutGeneral.html.twig" %}
+
+{% block titre %}
+
+	<style>
+		.menu{
+			font-family: 'Roboto', sans-serif;
+			color: white;
+		}
+	</style>
+	<div class="row center">
+		<div class="vertical-menu col s2">
+		  <a id="0" class="menu activate" href="/projet/0" >Tous</a>
+		  {%for langage in langages %}
+		  	<a id="{{langage.id}}" class="menu" href="/projet/{{langage.id}}">{{langage.nom}}</a>
+		  {% endfor %}
+		</div>
+
+		<div class="center col s6 offset-s2">
+			<h2>Liste des projets</h2>
+			<br/>
+		 	{% for projet in projets %}
+			    <div class="card horizontal grey lighten-4">
+			      <div class="card-image">
+			        <img class="responsive-img" src="../imagesProjet/{{projet.image}}">
+			      </div>
+			      <div class="card-stacked">
+			        <div class="card-content" style="color:#5e35b1">
+			        	<H6><b>{{projet.nom}} - {{projet.langage}}</b></H6>
+			          <p>{{projet.description}}</p>
+			        </div>
+			        <div class="card-action">
+			          <a href="{{projet.lien}}">Télécharger</a>
+			        </div>
+			      </div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<script>
+		document.getElementById({{affichage}}).classList.add('active')
+	</script>
+
+{%endblock%}

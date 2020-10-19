@@ -1,0 +1,14 @@
+{
+    "name": "jimmy/mon-site",
+    "description": "mon Site",
+    "type": "project",
+    "license": "GNU3",
+    "authors": [
+        {
+            "name": "jimmy-wims",
+            "email": "jimmy.wims@laposte.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

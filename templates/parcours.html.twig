@@ -1,0 +1,82 @@
+{% extends "layoutGeneral.html.twig" %}
+
+{% block titre %}
+	<style>
+		.reveal {
+			opacity: 0;
+			transform: translateX(-30px);
+		}
+
+		.reveal-visible {
+			opacity: 1;
+			transform: translateX(0);
+			transition: 1s;
+		}
+	</style>
+
+	
+
+	<br/><br/>
+	<h3 class="center-align">Mon parcours</h3>
+	<br/>
+	<div class="container">
+		<div class="timeline">
+			<div class="timeline-event">
+				<div class="card timeline-content reveal">
+					<div class="card-image">
+						<img src="images/lycee.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">Bac scientifique - spécialité SVT</span>
+						<p style="color:black">Lycée Charles De Gaulle</p>
+						<h6 class="grey-text text-lighten-1"><img width="15" height="15" src="images/calendrier.png"/> Septembre 2013 - Juin 2016</h6>
+					</div>
+				</div>
+				<div class="timeline-badge light-green accent-4"></div>
+			</div>
+
+			<div class="timeline-event">
+				<div class="card timeline-content reveal">
+					<div class="card-image">
+						<img src="images/ufr.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">Licence informatique</span>
+						<p style="color:black">UFR des Sciences</p>
+						<h6 class="grey-text text-lighten-1"><img width="15" height="15" src="images/calendrier.png"/> Septembre 2016 - Septembre 2019</h6>
+					</div>
+				</div>
+				<div class="timeline-badge light-green accent-4"></div>
+			</div>
+
+			<div class="timeline-event">
+				<div class="card timeline-content reveal">
+					<div class="card-image">
+						<img src="images/ufrGestion.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">Stage développeur PHP</span>
+						<p style="color:black">UFR de gestion et d'économie</p>
+						<p style="color:black">-> Développement de plugin pour la plateforme d'apprentissage Moodle</p>
+						<h6 class="grey-text text-lighten-1"><img width="15" height="15" src="images/calendrier.png"/> Avril 2019 - Juin 2019</h6>
+					</div>
+				</div>
+				<div class="timeline-badge light-green accent-4"></div>
+			</div>
+
+			<div class="timeline-event">
+				<div class="card timeline-content reveal">
+					<div class="card-image">
+						<img src="images/miage.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title grey-text text-darken-4">M1 Miage(Master Méthodes Informatiques Appliquées à la Gestion des Entreprises)</span>
+						<p style="color:black">UFR des Sciences</p>
+						<h6 class="grey-text text-lighten-1"><img width="15" height="15" src="images/calendrier.png"/> Septembre 2019 - Septembre 2020</h6>
+					</div>
+				</div>
+				<div class="timeline-badge light-green accent-4"></div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
